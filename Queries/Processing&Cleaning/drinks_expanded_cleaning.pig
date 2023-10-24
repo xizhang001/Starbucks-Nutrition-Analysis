@@ -1,5 +1,5 @@
 -- Load the expanded drinks dataset
-expanded_drinks = LOAD '../Data/starbucks_drinkMenu_expanded.csv' USING PigStorage(',') AS (
+expanded_drinks = LOAD '../../Data/Raw_data/starbucks_drinkMenu_expanded.csv' USING PigStorage(',') AS (
     Beverage_category:chararray, 
     Beverage:chararray, 
     Beverage_prep:chararray, 

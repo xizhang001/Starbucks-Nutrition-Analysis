@@ -1,5 +1,5 @@
 -- Load the food dataset
-food = LOAD '../Data/starbucks-menu-nutrition-food.csv' USING PigStorage(',') AS (
+food = LOAD '../../Data/Raw_data/starbucks-menu-nutrition-food.csv' USING PigStorage(',') AS (
     Food_Item:chararray, 
     Calories:chararray, 
     Fat:chararray, 
