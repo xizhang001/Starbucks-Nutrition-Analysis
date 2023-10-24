@@ -18,4 +18,4 @@ food_cleaned = FOREACH food GENERATE
     (Protein == '-' ? NULL : Protein) AS Protein;
 
 -- Save the cleaned data
-STORE food_cleaned INTO '../Cleaned_Data/foods_cleaned.csv' USING PigStorage(',');
+STORE food_cleaned INTO '../../Data/Cleaned_data/foods_cleaned.csv' USING PigStorage(',');

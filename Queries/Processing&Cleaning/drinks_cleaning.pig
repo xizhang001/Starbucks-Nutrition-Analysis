@@ -23,4 +23,4 @@ drinks_cleaned = FOREACH drinks GENERATE
 DUMP drinks_cleaned;
 
 -- Save the cleaned data
-STORE drinks_cleaned INTO '../Cleaned_Data/drinks_cleaned.csv' USING PigStorage(',');
+STORE drinks_cleaned INTO '../../Data/Cleaned_data/drinks_cleaned' USING PigStorage(',');

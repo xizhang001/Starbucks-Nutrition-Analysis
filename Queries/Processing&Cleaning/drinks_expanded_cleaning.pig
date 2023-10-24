@@ -42,4 +42,4 @@ expanded_drinks_cleaned = FOREACH expanded_drinks GENERATE
     (Caffeine == '-' ? NULL : Caffeine) AS Caffeine;
 
 -- Save the cleaned data
-STORE expanded_drinks_cleaned INTO '../Cleaned_Data/drinks_expanded_cleaned.csv' USING PigStorage(',');
+STORE expanded_drinks_cleaned INTO '../../Data/Cleaned_data/drinks_expanded_cleaned.csv' USING PigStorage(',');
