@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE expanded_drinks (
+CREATE TABLE IF NOT EXISTS expanded_drinks_cleaned (
     Beverage_category STRING, 
     Beverage STRING, 
     Beverage_prep STRING, 
@@ -20,5 +20,6 @@ CREATE EXTERNAL TABLE expanded_drinks (
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
-LOCATION '../../Data/Cleaned_Data/drinks_expanded_cleaned/part-m-00000';
+STORED AS TEXTFILE;
+LOAD DATA LOCAL INPATH 'expanded_part-m-00000' INTO TABLE expanded_drinks_cleaned;
+

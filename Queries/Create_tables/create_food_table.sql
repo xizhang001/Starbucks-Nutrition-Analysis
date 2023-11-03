@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE food (
+CREATE TABLE IF NOT EXISTS foods_cleaned (
     Item STRING, 
     Calories INT, 
     Fat_g FLOAT, 
@@ -6,7 +6,8 @@ CREATE EXTERNAL TABLE food (
     Fiber_g INT, 
     Protein_g FLOAT
 )
+
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
-LOCATION '../../Data/Cleaned_Data/foods_cleaned/part-m-00000';
+STORED AS TEXTFILE;
+LOAD DATA LOCAL INPATH 'foods_part-m-00000' INTO TABLE foods_cleaned;

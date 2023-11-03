@@ -1,13 +1,14 @@
-CREATE EXTERNAL TABLE drinks_cleaned (
-    Beverage STRING, 
-    Calories INT, 
-    Fat STRING, 
-    Carb STRING, 
-    Fiber STRING, 
-    Protein STRING, 
-    Sodium STRING
+CREATE TABLE IF NOT EXISTS drinks_cleaned (
+    drink_name STRING,
+    calories INT,
+    fat_g DOUBLE,
+    carb_g DOUBLE,
+    fiber_g DOUBLE,
+    protein_g DOUBLE,
+    sodium_mg INT
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
-LOCATION '../../Data/Cleaned_Data/drinks_cleaned/part-m-00000';
+STORED AS TEXTFILE;
+LOAD DATA LOCAL INPATH 'part-m-00000' INTO TABLE drinks_cleaned;
+
