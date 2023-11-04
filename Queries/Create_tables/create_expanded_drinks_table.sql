@@ -21,5 +21,5 @@ CREATE TABLE IF NOT EXISTS expanded_drinks_cleaned (
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE;
-LOAD DATA LOCAL INPATH 'expanded_part-m-00000' INTO TABLE expanded_drinks_cleaned;
+LOAD DATA LOCAL INPATH 'drinks_expanded_part-m-00000' INTO TABLE expanded_drinks_cleaned;
 

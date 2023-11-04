@@ -1,10 +1,10 @@
 CREATE TABLE IF NOT EXISTS foods_cleaned (
     Item STRING, 
     Calories INT, 
-    Fat_g FLOAT, 
-    Carb_g FLOAT, 
+    Fat_g INT, 
+    Carb_g INT, 
     Fiber_g INT, 
-    Protein_g FLOAT
+    Protein_g INT
 )
 
 ROW FORMAT DELIMITED
