@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS expanded_drinks_cleaned (
     Beverage_category STRING, 
     Beverage STRING, 
     Beverage_prep STRING, 
-    Calories INT, 
+    Calories STRING, 
     Total_Fat STRING, 
     Trans_Fat STRING, 
     Saturated_Fat STRING, 

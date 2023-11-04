@@ -11,11 +11,11 @@ food = LOAD '../../Data/Raw_data/starbucks-menu-nutrition-food.csv' USING PigSto
 -- Clean the food dataset by replacing '-' with NULL
 food_cleaned = FOREACH food GENERATE 
     Item, 
-    (Calories == '-' ? NULL : (int)Calories) AS Calories:int, 
-    (Fat == '-' ? NULL : (float)Fat) AS Fat:float,
-    (Carb == '-' ? NULL : (float)Carb) AS Carb:float,
-    (Fiber == '-' ? NULL : (float)Fiber) AS Fiber:float,
-    (Protein == '-' ? NULL : (float)Protein) AS Protein:float;
+    (Calories == '-' ? NULL : Calories) AS Calories, 
+    (Fat == '-' ? NULL : Fat) AS Fat,
+    (Carb == '-' ? NULL : Carb) AS Carb,
+    (Fiber == '-' ? NULL : Fiber) AS Fiber,
+    (Protein == '-' ? NULL : Protein) AS Protein;
 
 -- Save the cleaned data
 STORE food_cleaned INTO '../../Data/Cleaned_data/foods_cleaned' USING PigStorage(',');

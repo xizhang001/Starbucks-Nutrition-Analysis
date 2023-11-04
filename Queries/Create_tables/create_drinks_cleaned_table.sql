@@ -1,11 +1,11 @@
 CREATE TABLE IF NOT EXISTS drinks_cleaned (
-    drink_name STRING,
-    calories INT,
-    fat_g DOUBLE,
-    carb_g DOUBLE,
-    fiber_g DOUBLE,
-    protein_g DOUBLE,
-    sodium_mg INT
+    Beverage String,
+    calories String,
+    fat_g String,
+    carb_g String,
+    fiber_g String,
+    protein_g String,
+    sodium_mg String
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
