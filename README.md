@@ -8,8 +8,8 @@ The project is organized into several directories, each serving a different purp
 
 ### Data
 
-- `[Cleaned_Data](Data/Cleaned_Data)`: This directory holds the cleaned and processed data ready for analysis.
-  - `[drinks_cleaned](Data/Cleaned_Data/drinks_cleaned)`
+- `[Cleaned_Data](Starbucks-Nutrition-Analysis/Data/Cleaned_Data)`: This directory holds the cleaned and processed data ready for analysis.
+  - `[drinks_cleaned](Starbucks-Nutrition-Analysis/Data/Cleaned_Data/drinks_cleaned)`
   - `[drinks_expanded_cleaned](Data/Cleaned_Data/drinks_expanded_cleaned)`
   - `[foods_cleaned](Data/Cleaned_Data/foods_cleaned)`
 - `[Raw_Data](Data/Raw_data)`: Contains the original, unprocessed CSV files of the Starbucks menu nutrition.
