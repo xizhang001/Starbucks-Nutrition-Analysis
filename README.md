@@ -45,7 +45,7 @@ The output from Hive and Pig queries is stored in the `Outputs` directory. This 
 
 Scripts for creating tables, processing, cleaning, and analyzing the data are contained within the `Queries` directory. Each script is documented to explain the purpose and the kind of analysis or processing it performs.
 
-## How to Use
+## Introduction
 
 1. Start by examining the raw data in the [Raw_Data](./Data/Raw_data) directory.
 2. Review the Pig scripts in [Processing&Cleaning](./Queries/Processing&Cleaning) to understand the data cleaning process.
