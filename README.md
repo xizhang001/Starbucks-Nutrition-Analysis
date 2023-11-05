@@ -8,27 +8,27 @@ The project is organized into several directories, each serving a different purp
 
 ### Data
 
-- `[Cleaned_Data](Starbucks-Nutrition-Analysis/Data/Cleaned_Data)`: This directory holds the cleaned and processed data ready for analysis.
-  - `[drinks_cleaned](Starbucks-Nutrition-Analysis/Data/Cleaned_Data/drinks_cleaned)`
-  - `[drinks_expanded_cleaned](Data/Cleaned_Data/drinks_expanded_cleaned)`
-  - `[foods_cleaned](Data/Cleaned_Data/foods_cleaned)`
-- `[Raw_Data](Data/Raw_data)`: Contains the original, unprocessed CSV files of the Starbucks menu nutrition.
+- [Cleaned_Data](./Data/Cleaned_Data): This directory holds the cleaned and processed data ready for analysis.
+  - [drinks_cleaned](./Data/Cleaned_Data/drinks_cleaned)
+  - [drinks_expanded_cleaned](./Data/Cleaned_Data/drinks_expanded_cleaned)
+  - [foods_cleaned](./Data/Cleaned_Data/foods_cleaned)
+- [Raw_Data](./Data/Raw_data): Contains the original, unprocessed CSV files of the Starbucks menu nutrition.
 
 ### Outputs
 
-- `[Hive_outputs](Outputs/Hive_outputs)`: Stores the results from the Hive queries.
-  - `[Complex_Queries](Outputs/Hive_outputs/Complex_Queries)`: Results of complex analytical queries.
-  - `[Simple_Queries](Outputs/Hive_outputs/Simple_Queries)`: Results of basic queries for initial insights.
-- `[Pig_outputs](Outputs/Pig_outputs)`: Contains the output data from Pig processing.
+- [Hive_outputs](./Outputs/Hive_outputs): Stores the results from the Hive queries.
+  - [Complex_Queries](./Outputs/Hive_outputs/Complex_Queries): Results of complex analytical queries.
+  - [Simple_Queries](./Outputs/Hive_outputs/Simple_Queries): Results of basic queries for initial insights.
+- [Pig_outputs](./Outputs/Pig_outputs): Contains the output data from Pig processing.
 
 ### Queries
 
-- `[Create_tables](Queries/Create_tables)`: SQL scripts for creating Hive tables from the cleaned data.
-- `[Hive_Queries](Queries/Hive_Queries)`: Contains all the SQL queries used for analysis.
-  - `[Complex_Queries](Queries/Hive_Queries/Complex_Queries)`: Advanced queries for in-depth analysis.
-  - `[Simple_Queries](Queries/Hive_Queries/Simple_Queries)`: Basic queries for preliminary analysis.
-- `[Pig_Queries](Queries/Pig_Queries)`: Pig scripts for both cleaning and analyzing data.
-- `[Processing&Cleaning](Queries/Processing&Cleaning)`: Pig scripts specifically for data cleaning.
+- [Create_tables](./Queries/Create_tables): SQL scripts for creating Hive tables from the cleaned data.
+- [Hive_Queries](./Queries/Hive_Queries): Contains all the SQL queries used for analysis.
+  - [Complex_Queries](./Queries/Hive_Queries/Complex_Queries): Advanced queries for in-depth analysis.
+  - [Simple_Queries](./Queries/Hive_Queries/Simple_Queries): Basic queries for preliminary analysis.
+- [Pig_Queries](./Queries/Pig_Queries): Pig scripts for both cleaning and analyzing data.
+- [Processing&Cleaning](./Queries/Processing&Cleaning): Pig scripts specifically for data cleaning.
 
 ## Data
 
@@ -44,9 +44,8 @@ Scripts for creating tables, processing, cleaning, and analyzing the data are co
 
 ## How to Use
 
-1. Start by examining the raw data in the `[Data/Raw_data](Data/Raw_data)` directory.
-2. Review the Pig scripts in `[Queries/Processing&Cleaning](Queries/Processing&Cleaning)` to understand the data cleaning process.
-3. Execute the table creation scripts from `[Queries/Create_tables](Queries/Create_tables)` in Hive to set up the data structures.
-4. Run the analysis scripts found in `[Queries/Hive_Queries](Queries/Hive_Queries)` and `[Queries/Pig_Queries](Queries/Pig_Queries)` to perform the analysis.
-5. Check the `[Outputs](Outputs)` directory to review the results from the executed scripts.
-
+1. Start by examining the raw data in the [Raw_Data](./Data/Raw_data) directory.
+2. Review the Pig scripts in [Processing&Cleaning](./Queries/Processing&Cleaning) to understand the data cleaning process.
+3. Execute the table creation scripts from [Create_tables](./Queries/Create_tables) in Hive to set up the data structures.
+4. Run the analysis scripts found in [Hive_Queries](./Queries/Hive_Queries) and [Pig_Queries](./Queries/Pig_Queries) to perform the analysis.
+5. Check the [Outputs](./Outputs) directory to review the results from the executed scripts.
