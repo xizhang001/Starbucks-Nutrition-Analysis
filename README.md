@@ -1,18 +1,21 @@
-# Starbucks-Nutrition-Analysis - CA4022 assignment 1
+# CA4022 assignment 1: Starbucks-Nutrition-Analysis
 
 This repository contains the code and documentation for analyzing the nutritional information of the Starbucks menu. The analysis is performed using Apache Pig for data cleaning and Apache Hive for running both simple and complex queries on the cleaned data.
+
+Data Source: https://www.kaggle.com/datasets/starbucks/starbucks-menu
 
 ## Repository Structure
 
 The project is organized into several directories, each serving a different purpose in the workflow:
 
-### Data
 
+### Data
 - [Cleaned_Data](./Data/Cleaned_Data): This directory holds the cleaned and processed data ready for analysis.
   - [drinks_cleaned](./Data/Cleaned_Data/drinks_cleaned)
   - [drinks_expanded_cleaned](./Data/Cleaned_Data/drinks_expanded_cleaned)
   - [foods_cleaned](./Data/Cleaned_Data/foods_cleaned)
 - [Raw_Data](./Data/Raw_data): Contains the original, unprocessed CSV files of the Starbucks menu nutrition.
+
 
 ### Outputs
 
@@ -23,12 +26,12 @@ The project is organized into several directories, each serving a different purp
 
 ### Queries
 
-- [Create_tables](./Queries/Create_tables): SQL scripts for creating Hive tables from the cleaned data.
-- [Hive_Queries](./Queries/Hive_Queries): Contains all the SQL queries used for analysis.
-  - [Complex_Queries](./Queries/Hive_Queries/Complex_Queries): Advanced queries for in-depth analysis.
-  - [Simple_Queries](./Queries/Hive_Queries/Simple_Queries): Basic queries for preliminary analysis.
-- [Pig_Queries](./Queries/Pig_Queries): Pig scripts for both cleaning and analyzing data.
-- [Processing&Cleaning](./Queries/Processing&Cleaning): Pig scripts specifically for data cleaning.
+- [Create_tables](./Queries/Create_tables): SQL scripts for creating Hive tables from the cleaned data. 
+- [Hive_Queries](./Queries/Hive_Queries): Contains all the SQL queries used for analysis. 
+  - [Complex_Queries](./Queries/Hive_Queries/Complex_Queries): Advanced queries for in-depth analysis. 
+  - [Simple_Queries](./Queries/Hive_Queries/Simple_Queries): Basic queries for preliminary analysis. 
+- [Pig_Queries](./Queries/Pig_Queries): Pig scripts for both cleaning and analyzing data. 
+- [Processing&Cleaning](./Queries/Processing&Cleaning): Pig scripts specifically for data cleaning. 
 
 ## Data
 
