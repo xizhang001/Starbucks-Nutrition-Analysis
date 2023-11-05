@@ -1,4 +1,6 @@
 INSERT OVERWRITE LOCAL DIRECTORY '/usr/local/Cellar/hadoop/3.3.6/libexec/Avg_sugar_for_each_bev_cat_output'
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
 SELECT 
     Beverage_category, 
     AVG(CAST(Sugars AS DOUBLE)) AS Avg_Sugar
