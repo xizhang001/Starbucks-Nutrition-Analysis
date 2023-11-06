@@ -2,7 +2,7 @@
 
 This repository contains the code and documentation for analyzing the nutritional information of the Starbucks menu. The analysis is performed using Apache Pig for data cleaning and Apache Hive for running both simple and complex queries on the cleaned data.
 
-Data Source:[Nutrition facts for Starbucks Menu](https://www.kaggle.com/datasets/starbucks/starbucks-menu)
+Data Source: [Nutrition facts for Starbucks Menu](https://www.kaggle.com/datasets/starbucks/starbucks-menu)
 
 ## Repository Structure
 
@@ -44,6 +44,10 @@ The output from Hive and Pig queries is stored in the `Outputs` directory. This 
 ## Queries
 
 Scripts for creating tables, processing, cleaning, and analyzing the data are contained within the `Queries` directory. Each script is documented to explain the purpose and the kind of analysis or processing it performs.
+
+## Visualisations
+
+
 
 ## Introduction
 
