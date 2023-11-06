@@ -8,6 +8,8 @@ Data Source: [Nutrition facts for Starbucks Menu](https://www.kaggle.com/dataset
 
 The project is organized into several directories, each serving a different purpose in the workflow:
 
+### Report
+- [Report]()
 
 ### Data
 
@@ -50,30 +52,7 @@ Scripts for creating tables, processing, cleaning, and analyzing the data are co
 The `Visualisations` directory contains the Jupyter notebooks used for visual analysis, CSV data for visualisation, and the resulting graphical representations. These visuals help in understanding the data patterns and insights derived from the analysis.
 
 - [Jupyter_notebook](./Visualisations/Jupyter_notebook): Jupyter notebooks for visual analysis.
-  - [complex1.ipynb](./Visualisations/Jupyter_notebook/complex1.ipynb)
-  - [complex2.ipynb](./Visualisations/Jupyter_notebook/complex2.ipynb)
-  - [simple1.ipynb](./Visualisations/Jupyter_notebook/simple1.ipynb)
-  - [simple2.ipynb](./Visualisations/Jupyter_notebook/simple2.ipynb)
-  
+
 - [csv_data](./Visualisations/csv_data): CSV files containing data extracted from Hive/Pig for visualisation.
-  - [complex1.csv](./Visualisations/csv_data/complex1.csv)
-  - [complex2.csv](./Visualisations/csv_data/complex2.csv)
-  - [simple1.csv](./Visualisations/csv_data/simple1.csv)
-  - [simple2.csv](./Visualisations/csv_data/simple2.csv)
     
 - [graph](./Visualisations/graph): Images of graphs and charts generated from the analysis.
-  - [complex1.png](./Visualisations/graph/complex1.png)
-  - [complex2.png](./Visualisations/graph/complex2.png)
-  - [simple1.png](./Visualisations/graph/simple1.png)
-  - [simple2.png](./Visualisations/graph/simple2.png)
-
-
-
-
-## Introduction
-
-1. Start by examining the raw data in the [Raw_Data](./Data/Raw_data) directory.
-2. Review the Pig scripts in [Processing&Cleaning](./Queries/Processing&Cleaning) to understand the data cleaning process.
-3. Execute the table creation scripts from [Create_tables](./Queries/Create_tables) in Hive to set up the data structures.
-4. Run the analysis scripts found in [Hive_Queries](./Queries/Hive_Queries) and [Pig_Queries](./Queries/Pig_Queries) to perform the analysis.
-5. Check the [Outputs](./Outputs) directory to review the results from the executed scripts.
