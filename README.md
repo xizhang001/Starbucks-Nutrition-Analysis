@@ -14,6 +14,7 @@ The project is organized into several directories, each serving a different purp
   - [drinks_cleaned](./Data/Cleaned_Data/drinks_cleaned)
   - [drinks_expanded_cleaned](./Data/Cleaned_Data/drinks_expanded_cleaned)
   - [foods_cleaned](./Data/Cleaned_Data/foods_cleaned)
+
 - [Raw_Data](./Data/Raw_data): Contains the original, unprocessed CSV files of the Starbucks menu nutrition.
 
 
@@ -22,16 +23,40 @@ The project is organized into several directories, each serving a different purp
 - [Hive_outputs](./Outputs/Hive_outputs): Stores the results from the Hive queries.
   - [Complex_Queries](./Outputs/Hive_outputs/Complex_Queries): Results of complex analytical queries.
   - [Simple_Queries](./Outputs/Hive_outputs/Simple_Queries): Results of basic queries for initial insights.
+  
 - [Pig_outputs](./Outputs/Pig_outputs): Contains the output data from Pig processing.
 
 ### Queries
 
-- [Create_tables](./Queries/Create_tables): SQL scripts for creating Hive tables from the cleaned data. 
+- [Create_tables](./Queries/Create_tables): SQL scripts for creating Hive tables from the cleaned data.
+  
 - [Hive_Queries](./Queries/Hive_Queries): Contains all the SQL queries used for analysis. 
   - [Complex_Queries](./Queries/Hive_Queries/Complex_Queries): Advanced queries for in-depth analysis. 
-  - [Simple_Queries](./Queries/Hive_Queries/Simple_Queries): Basic queries for preliminary analysis. 
-- [Pig_Queries](./Queries/Pig_Queries): Pig scripts for both cleaning and analyzing data. 
-- [Processing&Cleaning](./Queries/Processing&Cleaning): Pig scripts specifically for data cleaning. 
+  - [Simple_Queries](./Queries/Hive_Queries/Simple_Queries): Basic queries for preliminary analysis.
+  
+- [Pig_Queries](./Queries/Pig_Queries): Pig scripts for both cleaning and analyzing data.
+
+- [Processing&Cleaning](./Queries/Processing&Cleaning): Pig scripts specifically for data cleaning.
+
+### Visualisations
+
+- [Jupyter_notebook](./Visualisations/Jupyter_notebook): Jupyter notebooks for visual analysis.
+  - [complex1.ipynb](./Visualisations/Jupyter_notebook/complex1.ipynb)
+  - [complex2.ipynb](./Visualisations/Jupyter_notebook/complex2.ipynb)
+  - [simple1.ipynb](./Visualisations/Jupyter_notebook/simple1.ipynb)
+  - [simple2.ipynb](./Visualisations/Jupyter_notebook/simple2.ipynb)
+  
+- [csv_data](./Visualisations/csv_data): CSV files containing data extracted from Hive/Pig for visualisation.
+  - [complex1.csv](./Visualisations/csv_data/complex1.csv)
+  - [complex2.csv](./Visualisations/csv_data/complex2.csv)
+  - [simple1.csv](./Visualisations/csv_data/simple1.csv)
+  - [simple2.csv](./Visualisations/csv_data/simple2.csv)
+    
+- [graph](./Visualisations/graph): Images of graphs and charts generated from the analysis.
+  - [complex1.png](./Visualisations/graph/complex1.png)
+  - [complex2.png](./Visualisations/graph/complex2.png)
+  - [simple1.png](./Visualisations/graph/simple1.png)
+  - [simple2.png](./Visualisations/graph/simple2.png)
 
 ## Data
 
@@ -47,7 +72,7 @@ Scripts for creating tables, processing, cleaning, and analyzing the data are co
 
 ## Visualisations
 
-
+The `Visualisations` directory contains the Jupyter notebooks used for visual analysis, CSV data for visualisation, and the resulting graphical representations. These visuals help in understanding the data patterns and insights derived from the analysis.
 
 ## Introduction
 
