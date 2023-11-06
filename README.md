@@ -10,6 +10,9 @@ The project is organized into several directories, each serving a different purp
 
 
 ### Data
+
+The `Data` directory contains both raw and cleaned data. The raw data is sourced from publicly available nutritional information from Starbucks, and it includes drinks and food menus. The cleaned data is the output after preprocessing the raw CSV files using Pig scripts to remove inconsistencies and prepare the data for analysis.
+
 - [Cleaned_Data](./Data/Cleaned_Data): This directory holds the cleaned and processed data ready for analysis.
   - [drinks_cleaned](./Data/Cleaned_Data/drinks_cleaned)
   - [drinks_expanded_cleaned](./Data/Cleaned_Data/drinks_expanded_cleaned)
@@ -20,6 +23,8 @@ The project is organized into several directories, each serving a different purp
 
 ### Outputs
 
+The output from Hive and Pig queries is stored in the `Outputs` directory. This includes results from both simple and complex queries, which are designed to provide insights into the nutritional content of the Starbucks menu.
+
 - [Hive_outputs](./Outputs/Hive_outputs): Stores the results from the Hive queries.
   - [Complex_Queries](./Outputs/Hive_outputs/Complex_Queries): Results of complex analytical queries.
   - [Simple_Queries](./Outputs/Hive_outputs/Simple_Queries): Results of basic queries for initial insights.
@@ -27,6 +32,8 @@ The project is organized into several directories, each serving a different purp
 - [Pig_outputs](./Outputs/Pig_outputs): Contains the output data from Pig processing.
 
 ### Queries
+
+Scripts for creating tables, processing, cleaning, and analyzing the data are contained within the `Queries` directory. Each script is documented to explain the purpose and the kind of analysis or processing it performs.
 
 - [Create_tables](./Queries/Create_tables): SQL scripts for creating Hive tables from the cleaned data.
   
@@ -39,6 +46,8 @@ The project is organized into several directories, each serving a different purp
 - [Processing&Cleaning](./Queries/Processing&Cleaning): Pig scripts specifically for data cleaning.
 
 ### Visualisations
+
+The `Visualisations` directory contains the Jupyter notebooks used for visual analysis, CSV data for visualisation, and the resulting graphical representations. These visuals help in understanding the data patterns and insights derived from the analysis.
 
 - [Jupyter_notebook](./Visualisations/Jupyter_notebook): Jupyter notebooks for visual analysis.
   - [complex1.ipynb](./Visualisations/Jupyter_notebook/complex1.ipynb)
@@ -58,21 +67,8 @@ The project is organized into several directories, each serving a different purp
   - [simple1.png](./Visualisations/graph/simple1.png)
   - [simple2.png](./Visualisations/graph/simple2.png)
 
-## Data
 
-The `Data` directory contains both raw and cleaned data. The raw data is sourced from publicly available nutritional information from Starbucks, and it includes drinks and food menus. The cleaned data is the output after preprocessing the raw CSV files using Pig scripts to remove inconsistencies and prepare the data for analysis.
 
-## Outputs
-
-The output from Hive and Pig queries is stored in the `Outputs` directory. This includes results from both simple and complex queries, which are designed to provide insights into the nutritional content of the Starbucks menu.
-
-## Queries
-
-Scripts for creating tables, processing, cleaning, and analyzing the data are contained within the `Queries` directory. Each script is documented to explain the purpose and the kind of analysis or processing it performs.
-
-## Visualisations
-
-The `Visualisations` directory contains the Jupyter notebooks used for visual analysis, CSV data for visualisation, and the resulting graphical representations. These visuals help in understanding the data patterns and insights derived from the analysis.
 
 ## Introduction
 
