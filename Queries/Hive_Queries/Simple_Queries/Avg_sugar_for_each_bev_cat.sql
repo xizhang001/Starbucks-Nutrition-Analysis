@@ -3,7 +3,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 SELECT 
     Beverage_category, 
-    AVG(CAST(Sugars AS DOUBLE)) AS Avg_Sugar
+    ROUND(AVG(CAST(Sugars AS DOUBLE)), 2) AS Avg_Sugar
 FROM 
     expanded_drinks_cleaned
 WHERE 
