@@ -9,7 +9,7 @@ Data Source: [Nutrition facts for Starbucks Menu](https://www.kaggle.com/dataset
 The project is organized into several directories, each serving a different purpose in the workflow:
 
 ### Report
-- [Report]()
+- [Report](Report.pdf): Documentation for CA4022 assignment 1.
 
 ### Data
 
