@@ -13,7 +13,7 @@ beverages_data = FILTER beverages BY Beverage_category IS NOT NULL AND Beverage_
 grouped = GROUP beverages_data BY Beverage_category;
 
 -- Calculate the average sugar content for each group
-average_sugars = FOREACH grouped GENERATE group AS Beverage_category, AVG(beverages_data.Sugars_g) AS Average_Sugar;
+average_sugars = FOREACH grouped GENERATE group AS Beverage_category, ROUND(AVG(beverages_data.Sugars_g) * 100.0) / 100.0 AS Average_Sugar;
 
 -- Sort the categories by average sugar content in descending order
 sorted = ORDER average_sugars BY Average_Sugar DESC;
